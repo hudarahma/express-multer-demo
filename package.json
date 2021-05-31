@@ -1,0 +1,19 @@
+{
+  "name": "express-demo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd client && npm start\" \"cd server && nodemon index\" ",
+    "start": "concurrently \"cd client && npm build\" \" cd server && node index\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "currently": "0.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
