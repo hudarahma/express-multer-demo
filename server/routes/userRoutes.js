@@ -23,6 +23,8 @@ router.post('/register', async (req, res) => {
     }
 });
 
+//  /:id req.params.id
+
 router.post("/", async (req, res) => {
     try {
         
