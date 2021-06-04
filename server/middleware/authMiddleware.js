@@ -1,7 +1,7 @@
 const { verify } = require("../utils/utils");
 const db = require('../models/index');
 
-module.exports = (req, res, next) => {
+module.exports = async (req, res, next) => {
 
     try {
         const token = req.headers['authorization'].split(" ")[1];
